@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View items in your shopping cart, manage quantities, and proceed to checkout.">
+  <title>Shopping Cart - KartVibe</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="/js/main.js"></script>
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header>
+    <div class="nav-container">
+      <a href="/" class="logo">
+        KartVibe <span>Explore Plus</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <!-- Dynamically rendered via main.js -->
+        <li><a href="/">Home</a></li>
+        <li><a href="/cart.html">Cart</a></li>
+        <li><a href="/login.html">Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Body Content -->
+  <main class="container">
+    <div id="cart-page">
+      <!-- Loading indicator -->
+      <div style="text-align: center; padding: 40px; color: var(--text-muted);">
+        Loading your cart...
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

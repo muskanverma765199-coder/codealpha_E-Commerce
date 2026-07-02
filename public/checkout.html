@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Securely complete your order by entering your shipping details.">
+  <title>Checkout - KartVibe</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="/js/main.js"></script>
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header>
+    <div class="nav-container">
+      <a href="/" class="logo">
+        KartVibe <span>Explore Plus</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <!-- Dynamically rendered via main.js -->
+        <li><a href="/">Home</a></li>
+        <li><a href="/cart.html">Cart</a></li>
+        <li><a href="/login.html">Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Body Content -->
+  <main class="container">
+    <div id="checkout-page" class="checkout-layout">
+      
+      <!-- Shipping Form -->
+      <div class="shipping-panel">
+        <h2 class="cart-title" style="margin-bottom: 24px;">Shipping Address</h2>
+        <form id="checkout-form">
+          <div class="form-group">
+            <label for="address">Full Delivery Address</label>
+            <textarea id="address" class="form-control" rows="4" placeholder="Enter your complete home or office address (Street, City, State, ZIP code)..." required></textarea>
+          </div>
+          <button type="submit" class="checkout-btn" style="margin-top: 20px;">Place Order</button>
+        </form>
+      </div>
+
+      <!-- Checkout Summary Panel -->
+      <div class="price-summary-panel">
+        <h2 class="summary-title">Order Summary</h2>
+        <div id="checkout-items" style="margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 12px;">
+          <!-- Dynamically populated -->
+        </div>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="checkout-subtotal">₹0</span>
+        </div>
+        <div class="summary-row">
+          <span>Delivery Charges</span>
+          <span id="checkout-delivery" style="color: var(--text-green); font-weight: 600;">FREE</span>
+        </div>
+        <div class="summary-row total">
+          <span>Total Amount</span>
+          <span id="checkout-total">₹0</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
